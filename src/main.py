@@ -1,3 +1,7 @@
+# To resolve this, I use a list that will act as an array and that contain a flags
+# to indicate that the number n in the position p n*2=p is contained in the received list
+# for negative numbers uses the position (n*2)+1=p
+
 def get_pairs (number_list, expected_sum):
     list_size = (max(number_list)*2)+3 if max(number_list) > expected_sum else (expected_sum*2)+3
     numbers = [False] * list_size
